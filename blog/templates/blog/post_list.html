@@ -2,6 +2,14 @@
     <head>
         <title>OracleZJ's blog</title>
     </head>
-    <p>피드백루프</p>
-    <p>이종욱</p>
+    <div>
+        </h1><a href="/">Django OracleZJ Blog</a></h1>
+    </div>
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
 </html>

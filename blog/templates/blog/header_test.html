@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .jbHeaderTitle {
+        position: fixed;
+        text-align: center;
+        background-color: green;
+        width: 100%;
+        padding: 0px 0px;
+        top : 0px;
+      }
+      .jbTitle {
+        text-align: center;
+      }
+      .jbMenu {
+        text-align: center;
+        background-color: yellow;
+        padding: 10px 0px;
+        width: 100%;
+      }
+      .jbContent {
+        height: 2000px;
+      }
+      .jbFixed {
+        position: fixed;
+        top: 20px;
+      }
+    </style>
+    <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        var jbOffset = $( '.jbMenu' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() + 15 > jbOffset.top ) {
+            $( '.jbMenu' ).addClass( 'jbFixed' );
+          }
+          else {
+            $( '.jbMenu' ).removeClass( 'jbFixed' );
+          }
+        });
+      } );
+    </script>
+  </head>
+  <header>
+
+  </header>
+  <body>
+        <div class="jbHeaderTitle">
+                Site Header
+                </div>
+      <h1>Site Image</h1>
+    
+    <div class="jbMenu">
+      <p>
+        First Menu
+        Second Menu
+        Third Menu
+        Fourth Menu
+      </p>
+    </div>
+    <div class="jbContent">
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        ㅁ<br />
+        <br />
+        ㄴ<br />
+        ㄴ<br />
+        ㄴ<br />
+        ㄴ<br />
+        ㄴ<br />
+        ㄴ<br />
+        ㅇ<br />
+        ㅇ<br />
+        ㅇ<br />
+        ㅇ<br />
+        ㅇ<br />
+        ㅇ<br />
+        ㄹ<br />
+        ㄹv
+        ㄹ<br />
+        ㄹ<br />
+        ㄹ<br />
+        ㅎ<br />/<br />
+        ㅎ<br />
+        ㅎ<br />
+        ㅎv
+        ㅎ<br />
+        ㅎ<br />
+        <br />
+    </div>
+  </body>
+</html>

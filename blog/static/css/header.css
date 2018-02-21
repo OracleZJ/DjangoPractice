@@ -1,0 +1,20 @@
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .jbTitle {
+    text-align: center;
+  }
+  .jbMenu {
+    text-align: center;
+    background-color: yellow;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  .jbContent {
+    height: 2000px;
+  }
+  .jbFixed {
+    position: fixed;
+    top: 0px;
+  }
